@@ -34,12 +34,21 @@ block content
               p NFT기술과 자동차의 만남
             .title-sub
               p MY CAR NFT가 여러분을 찾아갑니다.
-              p 자동차에 NFT기술을 접목하여 새로운 가치를 창출하여
+              p 자동차에 NFT기술을 접목해 새로운 가치를 창출하여
               p 여러분의 자동차의 가치를 올려보세요!
             .btn-area
-              a(href="https://play.google.com/store/apps/details?id=com.hauto_rn_android" class="btn-connected" target="_blank") Get Connected
+              a(class="btn-connected" href="https://play.google.com/store/apps/details?id=com.hauto_rn_android"  target="_blank") Get Connected
 
-          
+    section(class="sect sect-main-introduce")
+      .sect-container
+        .sect-content.main-introduce-content
+          .cont-area.img-area
+            img(src="", alt="이미지")
+          .cont-area.text-area 
+            h3.title 마이카 NFT란!
+            p.explain-text
+              | 마이카 NFT는 보유중인 자동차 정보에 NFT(대체불가토큰)기술를 접목하여 자동차에 주유, 운행거리 등 각종 정보를 위변조를 방지하여 사용자 여러분에게 
+
 
     section(class="sect sect-main-advantages")
       .sect-container
@@ -74,6 +83,7 @@ block content
           .title-area 
             h3.title-main 로드맵
             p.title-sub 자동차의
+          .top-img-area
             img(src=`${imgPath}/main/img_particle_car.png`, alt="이미지")
           .text-area
             p 로드맵이다
@@ -90,14 +100,19 @@ block content
       .sect-container
         .sect-bg-area.main-last-bg
           .bg-video-area.bg-img-area
+            .img-box.bg-img01
             .video-area.video01
               .video-crop-area
                 video(id="target-play-video" class="bg-video" autoplay muted loop)
                   source(src="http://hauto.kr/static/video/bg_aurora.mp4" type="video/mp4")
-              .img-box.bg-img01
+            .img-box.bg-img02
+            .img-box.img-object01
+              img(src=`${imgPath}/main/bg_cube03.png`, alt="이미지")
         .sect-content.main-last-content 
           .text-area
-            p 마이카 NFT로 여러분의 자동차에 새로운 가치를 만드세요!!
+            p.title-main 마이카 NFT
+            p.title-sub 마이카 NFT로 여러분의 자동차에 새로운 가치를 만드세요!!
+            a(class="btn-go-app" href="https://play.google.com/store/apps/details?id=com.hauto_rn_android", target="_blank") 새로운 가치 만들기
 
 
 

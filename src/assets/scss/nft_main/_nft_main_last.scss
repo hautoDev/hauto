@@ -12,9 +12,41 @@
       top: 0;
       width: 100%;
       height: 100%;
-      background: linear-gradient(to bottom, #000 30%, rgba(0, 0, 0, 0) 60%);
+      background: url("/img/main/bg_space.jpg") no-repeat;
       background-position: center center;
       background-size: cover;
+      opacity: 0.95;
+    }
+    .bg-img02 {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom, rgba($color: #142068, $alpha: 0.8) 5%, rgba(0, 0, 0, 0) 25%);
+      background-position: center 0;
+      background-size: cover;
+    }
+    .img-object01 {
+      position: absolute;
+      top: 4%;
+      width: 20%;
+      height: 20%;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+
+      animation-name: moveUpDown;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+      img {
+        width: 100%;
+      }
+      // background: url("/img/main/bg_cube03.png") no-repeat;
+      // background-position: center 52%;
+      // background-size: 22%;
+      // backdrop-filter: ;
+      // filter: drop-shadow();
     }
   }
   .bg-video-area {
@@ -22,13 +54,14 @@
     position: relative;
     width: 100%;
     height: 100%;
+    min-height: 380px;
     overflow: hidden;
     // height: fit-content;
     // height: toRem(1200);
     left: 50%;
 
     transform: translateX(-50%);
-    padding-bottom: 24%;
+    padding-bottom: 20%;
 
     .video-area {
       position: absolute;
@@ -48,7 +81,9 @@
     .video01 {
       // transform: translateY(15.6%);
       transform: translateY(31%);
+      opacity: 0.84;
       bottom: 0;
+      mix-blend-mode: lighten;
       .video-crop-area {
       }
     }
@@ -58,6 +93,10 @@
 .main-last-content {
   position: absolute;
   top: 0;
+  left: 0;
+  right: 0;
+  max-width: 1200px;
+  margin: 0 auto;
   height: 100%;
   * {
     position: relative;
@@ -65,45 +104,60 @@
   .text-area {
     position: relative;
     top: 50%;
-    transform: translateY(-55%);
+    transform: translateY(-50%);
     p {
       color: #fff;
-
       // line-height: 1.5;
-      text-shadow: 5px 6px 12px rgba($color: #000, $alpha: 0.6), -5px 6px 12px rgba($color: #000, $alpha: 0.6);
-    }
-    .title-main {
-      p {
-        font-size: 82px;
-        line-height: 1.2;
-      }
-    }
-    .title-sub {
-      margin-top: 30px;
-      p {
-        font-size: 40px;
-        font-weight: 400;
-        line-height: 1.3;
-      }
+      text-shadow: 3px 4px 8px rgba($color: #000000, $alpha: 0.4), -3px 4px 8px rgba($color: #000, $alpha: 0.4);
     }
 
-    .btn-area {
-      margin-top: 70px;
-      .btn-connected {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-        color: #fff;
-        font-size: 42px;
-        letter-spacing: -0.1;
-        width: 380px;
-        height: 90px;
-        border-radius: 40px;
-        background-color: #5050dd;
-        text-shadow: 0 2px 8px rgba($color: #000, $alpha: 0.35);
-        box-shadow: 0 3px 12px 0 rgba($color: #000, $alpha: 0.6);
+    .title-main {
+      font-size: 86px;
+      line-height: 1.2;
+    }
+
+    .title-sub {
+      margin-top: 20px;
+      font-size: 40px;
+      font-weight: 400;
+      line-height: 1.3;
+    }
+
+    .btn-go-app {
+      margin: 0 auto;
+      margin-top: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      font-size: 40px;
+      letter-spacing: -0.1;
+      width: 480px;
+      height: 90px;
+      border-radius: 40px;
+      background-color: rgba($color: #143168, $alpha: 0.75);
+      text-shadow: 0 2px 8px rgba($color: #000, $alpha: 0.35);
+      box-shadow: 0 3px 12px 0 rgba($color: #000, $alpha: 0.6);
+      transition: all 0.3s;
+      &:hover {
+        background-color: rgba($color: #143168, $alpha: 0.95);
       }
     }
+  }
+}
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(30%);
+    filter: drop-shadow(0px 4px 12px rgba($color: #58bcff, $alpha: 0.5));
+  }
+  50% {
+    transform: translateY(-35%) scale(1.1);
+    filter: drop-shadow(0px 0px 26px rgba($color: #ffffff, $alpha: 0.7)) saturate(1.1) brightness(1.2);
+  }
+
+  100% {
+    transform: translateY(30%);
+    filter: drop-shadow(0px 4px 12px rgba($color: #58bcff, $alpha: 0.5));
   }
 }

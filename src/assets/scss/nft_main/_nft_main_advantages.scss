@@ -1,0 +1,15 @@
+.main-advantages-content {
+  padding-top: 80px;
+  .title-area {
+  }
+  .main-advantages-ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin-top: 40px;
+    li {
+      background-color: #eee;
+      padding: 40px 0;
+    }
+  }
+}
