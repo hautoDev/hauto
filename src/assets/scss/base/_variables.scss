@@ -1,0 +1,23 @@
+//$mobileBaseMaxSize: 750px;
+$mobileBaseMaxSize: 900px;
+$colorMainBlue: #333b97;
+$colorMainBlack: #191919;
+
+$baseSectWidthSize: 1200px;
+$baseSectWidthSizeSub: 1140px;
+
+$fixMinWidth: 1920px;
+
+@function removeUnit($value) {
+  //@return (calc($value / calc($value * 0 + 1)));
+  @return $value * 0 + 1;
+}
+
+@function toRem($pxValue) {
+  $toNum: $pxValue * 0 + 1;
+  $numValue: calc($pxValue / $toNum);
+  @return (calc($numValue / 10)) * 1rem;
+}
+
+$headerHeightPC: 115px;
+$headerHeightMobile: toRem(240);

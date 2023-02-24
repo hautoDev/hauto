@@ -1,0 +1,161 @@
+.carpage-sect-cont {
+  padding-top: $headerHeightPC;
+  padding-bottom: 132px;
+  .title-area {
+    margin-top: 112px;
+    .main {
+      color: #191919;
+      font-size: 58px;
+    }
+    .sub {
+      margin-top: 18px;
+      color: #434343;
+      font-size: 26px;
+      font-weight: 400;
+    }
+  }
+}
+
+.carpage-contents {
+  margin-top: 62px;
+}
+
+.carpage-list-ul {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 20px;
+  row-gap: 24px;
+  & > li {
+    border: 1px solid #dedede;
+    padding: 0 12px;
+    padding-bottom: 12px;
+    .img-area {
+      overflow: hidden;
+      height: 110px;
+      width: 100%;
+      position: relative;
+      img {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        margin: 0 auto;
+        -webkit-user-drag: none;
+      }
+    }
+    .car-info {
+      .car-name {
+        font-size: 23px;
+      }
+      .car-price-ul {
+        margin-top: 22px;
+        li {
+          display: flex;
+          justify-content: space-between;
+          padding: 6px 0;
+          &:nth-of-type(1) {
+            border-bottom: 1px solid #b2afaf;
+          }
+          p {
+            font-size: 17px;
+          }
+          .p-price {
+            color: #ee2424;
+          }
+        }
+      }
+    }
+    .btn-area {
+      margin-top: 12px;
+      & > :is(button, a) {
+        display: block;
+      }
+      .btn {
+        width: 100%;
+        border-radius: 4px;
+        color: #fff;
+        font-size: 14px;
+        transform: skew(-0.06deg);
+        // font-weight: 600;
+        height: 28px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .btn-quote {
+        background-color: #0c0c0c;
+      }
+      .btn-detail {
+        margin-top: 4px;
+        background-color: #4b57ca;
+      }
+    }
+  }
+}
+
+@media (max-width: $mobileBaseMaxSize) {
+  .carpage-sect-cont {
+    padding-top: $headerHeightMobile;
+    padding-bottom: toRem(132);
+    .title-area {
+      margin-top: toRem(80);
+      .main {
+        font-size: toRem(76);
+      }
+      .sub {
+        margin-top: toRem(20);
+
+        font-size: toRem(36);
+      }
+    }
+  }
+  .carpage-contents {
+    margin-top: toRem(42);
+  }
+
+  .carpage-list-ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: toRem(20);
+    row-gap: toRem(24);
+    & > li {
+      border: 1px solid #dedede;
+      padding: 0 toRem(20);
+      padding-bottom: toRem(18);
+      .car-info {
+        .car-name {
+          font-size: toRem(30);
+        }
+        .car-price-ul {
+          margin-top: toRem(38);
+          li {
+            padding: toRem(12) 0;
+            &:nth-of-type(1) {
+            }
+            p {
+              font-size: toRem(28);
+            }
+            .p-price {
+            }
+          }
+        }
+      }
+      .btn-area {
+        margin-top: toRem(8);
+        & > :is(button, a) {
+        }
+        .btn {
+          border-radius: toRem(12);
+          font-size: toRem(24);
+          // font-weight: 600;
+          height: toRem(66);
+        }
+        .btn-quote {
+        }
+        .btn-detail {
+          margin-top: toRem(7);
+        }
+      }
+    }
+  }
+}

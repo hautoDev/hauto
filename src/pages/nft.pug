@@ -1,0 +1,108 @@
+extends ../template/layout_nft
+
+//-==HTML==
+block content
+  div(class="active-menu-data" data-active-target-menu="home")
+  main(class="wrap-container page-main") 
+    section(class="sect sect-main-intro")
+      .sect-container
+        .sect-bg-area.main-intro-bg
+          .bg-video-area.bg-img-area
+            .video-area.video01
+              .video-crop-area
+                video(class="bg-video" autoplay muted loop)
+                  source(src="http://hauto.kr/static/video/bg_car.mp4" type="video/mp4")
+            
+            .bg-img-box.bg-img01
+
+            .video-area.video02
+              .video-crop-area
+                video(class="bg-video" autoplay muted loop)
+                  source(src="http://hauto.kr/static/video/bg_neon02.mp4" type="video/mp4")
+            .video-area.video03
+              .video-crop-area
+                video(class="bg-video" autoplay muted loop)
+                  source(src="http://hauto.kr/static/video/bg_neon02.mp4" type="video/mp4")
+
+          //- .bg-img-area
+          //-   .bg-img-box.bg-img01
+              
+        .sect-content.main-intro-content
+          .main-intro-text-area
+            .title-main
+              p MY CAR NFT
+              p NFT기술과 자동차의 만남
+            .title-sub
+              p MY CAR NFT가 여러분을 찾아갑니다.
+              p 자동차에 NFT기술을 접목하여 새로운 가치를 창출하여
+              p 여러분의 자동차의 가치를 올려보세요!
+            .btn-area
+              a(href="https://play.google.com/store/apps/details?id=com.hauto_rn_android" class="btn-connected" target="_blank") Get Connected
+
+          
+
+    section(class="sect sect-main-advantages")
+      .sect-container
+        .sect-content.main-advantages-content
+          .title-area 
+            h3.title-main 마이카 NFT 특장점!
+            p.title-sub 자동차의 가치를 올려줄 마이카 NFT플랫폼의 특장점을 소개합니다.
+          ul.main-advantages-ul
+            li 
+              p 제목1
+              p 내용
+            li 
+              p 제목2
+              p 내용
+            li 
+              p 제목
+              p 내용
+            li 
+              p 제목
+              p 내용
+
+
+              
+    section(class="sect sect-main-benefits")
+      .sect-container
+        .main-benefit-content 
+          .text-area
+    
+    section(class="sect sect-main-road-map")
+      .sect-container
+        .sect-content.main-road-map-content 
+          .title-area 
+            h3.title-main 로드맵
+            p.title-sub 자동차의
+            img(src=`${imgPath}/main/img_particle_car.png`, alt="이미지")
+          .text-area
+            p 로드맵이다
+          
+            p 로드맵
+    section(class="sect sect-main-join-request")
+      .sect-container
+        .sect-content.main-join-request-content 
+          .text-area            
+            p 지금 신청하세요!!
+
+
+    section(class="sect sect-main-last")
+      .sect-container
+        .sect-bg-area.main-last-bg
+          .bg-video-area.bg-img-area
+            .video-area.video01
+              .video-crop-area
+                video(id="target-play-video" class="bg-video" autoplay muted loop)
+                  source(src="http://hauto.kr/static/video/bg_aurora.mp4" type="video/mp4")
+              .img-box.bg-img01
+        .sect-content.main-last-content 
+          .text-area
+            p 마이카 NFT로 여러분의 자동차에 새로운 가치를 만드세요!!
+
+
+
+
+  //- script(src=`${basePath}/static/js/main_video_autoplay.js`)
+
+
+  

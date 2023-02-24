@@ -1,0 +1,128 @@
+//라잇트
+.ani-init-to-right {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.ani-back-to-right {
+  transition: 0.3s;
+}
+
+.ani-run-to-right {
+  opacity: 1;
+  transition: 0.5s;
+  transform: translateX(0%);
+}
+
+//레프트
+.ani-init-to-left {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.ani-back-to-left {
+  transition: 0.3s;
+}
+
+.ani-run-to-left {
+  opacity: 1;
+  transition: 0.5s;
+  transform: translateX(0%);
+}
+
+//업
+.ani-init-to-up {
+  opacity: 0;
+  transform: translateY(120%);
+}
+
+.ani-back-to-up {
+  transition: 0.3s;
+}
+
+.ani-run-to-up {
+  opacity: 1;
+  transition: 0.6s;
+  transform: translateY(0%);
+}
+
+//로테이트
+.ani-init-y-rotate {
+  opacity: 0;
+  transform: rotateY(0deg);
+}
+
+.ani-back-y-rotate {
+  transition: 0.2s;
+}
+
+.ani-run-y-rotate {
+  opacity: 1;
+  transition: 0.5s;
+  transform: rotateY(360deg);
+}
+
+//수몰
+.ani-init-to-small {
+  opacity: 0;
+  transform: scale(200%);
+}
+
+.ani-back-to-small {
+  transition: 0.2s;
+}
+
+.ani-run-to-small {
+  opacity: 1;
+  transition: 0.5s;
+  transform: scale(100%);
+}
+
+.ani-on-to-right {
+  transform: translateX(-100%);
+  animation-name: aniToRight;
+  // animation-duration: 0.7s;
+  // transition: all 0.4s;
+  // transform: translateX(0%);
+  // animation-name: aniToRight;
+  // animation-duration: 0.5s;
+  // animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  // opacity: 1;
+}
+
+.ani-off-to-right {
+  transform: translateX(0%);
+  animation-name: aniToRight;
+  animation-duration: 0.7s;
+  // transition: all 0.4s;
+  // transform: translateX(0%);
+  // animation-name: aniToRight;
+  // animation-duration: 0.5s;
+  // animation-iteration-count: 1;
+  animation-direction: reverse;
+  animation-fill-mode: forwards;
+  // opacity: 1;
+  // transform: translateX(0%);
+}
+
+@keyframes aniToRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  30% {
+    opacity: 0;
+  }
+  75% {
+    transform: translateX(10%);
+  }
+  85% {
+    transform: translateX(10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}

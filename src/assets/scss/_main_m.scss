@@ -1,0 +1,11 @@
+/*반응형*/
+@media (max-width: $mobileBaseMaxSize) {
+  .sect {
+    padding: 0 toRem(40);
+    padding-top: toRem(46);
+    padding-bottom: toRem(66);
+    .sect-container {
+      width: 100%;
+    }
+  }
+}

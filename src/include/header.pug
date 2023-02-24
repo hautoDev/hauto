@@ -1,0 +1,25 @@
+
+header.header.header-pos-absolute
+  div.header-container
+    .logo-area
+      .top-logo
+        a(href=`${basePath}index.html`)
+          img(src=`${imgPath}/common/top_logo.png`, alt="로고")
+      //- button(class="btn-hamburger pc-hidden fn-open-side-menu")
+      //-   img(src=`${imgPath}/common/btn_hamburger.png`, alt="햄버거 버튼")
+
+    nav.top-menu-content
+      ul.top-menu-ul
+        li(data-active-name="home"): a(href=`${basePath}index.html` class="pc-hidden") 회사소개
+          ul.top-sub-menu-ul
+            li: a(href=`${basePath}index.html`)
+
+        li(data-active-name="intro"): a(href=`${basePath}intro/intro.html`) 사업분야
+        li(data-active-name=""): a(class="fn-open-modal-car-release") 브랜드
+        li(data-active-name=""): a(href=`${basePath}nft.html`) NFT
+
+    div
+      button 테스트
+
+
+

@@ -1,0 +1,109 @@
+.main-last-bg {
+  position: relative;
+  // transform: scaleX(260%);
+  width: 100%;
+  overflow: hidden;
+  * {
+    position: relative;
+  }
+  .bg-img-area {
+    .bg-img01 {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom, #000 30%, rgba(0, 0, 0, 0) 60%);
+      background-position: center center;
+      background-size: cover;
+    }
+  }
+  .bg-video-area {
+    min-width: $fixMinWidth;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    // height: fit-content;
+    // height: toRem(1200);
+    left: 50%;
+
+    transform: translateX(-50%);
+    padding-bottom: 24%;
+
+    .video-area {
+      position: absolute;
+      overflow: hidden;
+      width: 100%;
+      // top: 0;
+      .video-crop-area {
+        position: relative;
+      }
+      .bg-video {
+        position: relative;
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+      }
+    }
+    .video01 {
+      // transform: translateY(15.6%);
+      transform: translateY(31%);
+      bottom: 0;
+      .video-crop-area {
+      }
+    }
+  }
+}
+
+.main-last-content {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  * {
+    position: relative;
+  }
+  .text-area {
+    position: relative;
+    top: 50%;
+    transform: translateY(-55%);
+    p {
+      color: #fff;
+
+      // line-height: 1.5;
+      text-shadow: 5px 6px 12px rgba($color: #000, $alpha: 0.6), -5px 6px 12px rgba($color: #000, $alpha: 0.6);
+    }
+    .title-main {
+      p {
+        font-size: 82px;
+        line-height: 1.2;
+      }
+    }
+    .title-sub {
+      margin-top: 30px;
+      p {
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 1.3;
+      }
+    }
+
+    .btn-area {
+      margin-top: 70px;
+      .btn-connected {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        color: #fff;
+        font-size: 42px;
+        letter-spacing: -0.1;
+        width: 380px;
+        height: 90px;
+        border-radius: 40px;
+        background-color: #5050dd;
+        text-shadow: 0 2px 8px rgba($color: #000, $alpha: 0.35);
+        box-shadow: 0 3px 12px 0 rgba($color: #000, $alpha: 0.6);
+      }
+    }
+  }
+}
